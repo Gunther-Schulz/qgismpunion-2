@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=MP Union
+qgisMinimumVersion=2.0
+description=Multicore-Enabled Union of Vectordata
+version=0.1
+author=Gunther Schulz
+email=kunde2@guntherschulz.de
+
+about=This plugin supports multi-core processing for running a union process on multiple vector layers. It is many times faster than a single-core union. All layers get merged into a single layer and divided into seperate tiles. A union is run on each tile with multiple union processes running on seperate cores and as the filne step, all tiles are merged again via another union.
+
+tracker=https://github.com/freedumb2000/qgismpunion/issues
+repository=https://github.com/freedumb2000/qgismpunion
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=
+
+homepage=https://github.com/freedumb2000/
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
